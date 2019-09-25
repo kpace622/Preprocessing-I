@@ -133,4 +133,156 @@ table {
 html,
 body {
   height: 100%;
+  background-color: skyblue;
+}
+.flexcenter {
+  display: flex;
+  justify-content: center;
+}
+.borderb {
+  border-bottom: 2px solid skyblue;
+}
+.bordert {
+  border-top: 2px solid skyblue;
+}
+.contain {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  height: 40vh;
+  width: 80vw;
+  margin-left: 10%;
+}
+@media (max-width: 500px) {
+  .container .container-content {
+    margin-top: 50px;
+  }
+}
+.container .container-top {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  height: 40vh;
+  width: 80vw;
+  margin-left: 10%;
+}
+.container .container-top header {
+  background: lightgray;
+}
+.container .container-top header nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.container .container-top header nav a {
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid skyblue;
+  color: black;
+}
+.container .container-top header h1 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .container .container-top header h1 {
+    font-size: 1rem;
+  }
+}
+.container .container-top header .header-content {
+  border-top: 2px solid skyblue;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .container .container-top header .header-content img {
+    height: 20vh;
+  }
+}
+.container .container-top header h2 {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 2px solid skyblue;
+}
+@media (max-width: 500px) {
+  .container .container-top header h2 {
+    font-size: 1rem;
+  }
+}
+.container .container-content {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  height: 40vh;
+  width: 80vw;
+  margin-left: 10%;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+}
+.container .container-content .work-skills {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container .container-content .work-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .container-content .work-skills .work {
+  margin-right: 200px;
+}
+@media (max-width: 500px) {
+  .container .container-content .work-skills .work {
+    margin-right: 0px;
+  }
+}
+.container .container-content h2 {
+  font-size: 2rem;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.container .container-content table {
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.container .container-content table th {
+  border: 1px solid black;
+  padding: 5px;
+}
+.container .container-content table th td {
+  border: 1px solid black;
+}
+.container .container-content .contact {
+  margin-top: 20px;
+  border-top: 2px solid skyblue;
+  width: 80%;
+}
+.container .container-content .contact h2 {
+  margin-top: 10px;
+}
+.container .container-content .contact form {
+  margin: 10px 30px;
+}
+.container footer {
+  border-top: 2px solid skyblue;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  height: 40vh;
+  width: 80vw;
+  margin-left: 10%;
+  height: 10vh;
+}
+.container footer a {
+  margin: 20px;
+  text-decoration: none;
 }
