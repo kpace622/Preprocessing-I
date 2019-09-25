@@ -54,6 +54,143 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: skyblue;
 }
 
+@page-color: skyblue;
+
+.flexcenter {
+	display: flex;
+	justify-content: center;
+}
+
+.borderb {
+	border-bottom: 2px solid @page-color;
+}
+
+.bordert {
+	border-top: 2px solid @page-color;
+}
+
+.contain {
+	.flexcenter;
+	background-color: lightgray;
+	height: 40vh;
+	width: 80vw;
+	margin-left: 10%;
+}
+
+.container {
+	@media(max-width: 500px) {
+		.container-content {
+			margin-top: 50px;
+		}
+
+	}
+	.container-top {
+		.contain;
+		header {
+			background: lightgray;
+			nav {
+				.flexcenter;
+				justify-content: space-around;
+				a {
+					text-decoration: none;
+					margin-top: 10px;
+					padding: 5px;
+					border: 2px solid @page-color;
+					color: black;
+				}
+			}
+			h1 {
+				@media(max-width: 500px) {
+					font-size: 1rem;
+				}
+				font-size: 3rem;
+				.flexcenter;
+				padding: 5px;
+			}
+			.header-content {
+				.bordert;
+				padding: 10px;
+				margin-top: 10px;
+				.flexcenter;
+				img {
+					@media(max-width: 500px) {
+						height: 20vh;
+					}
+				}
+			}
+			h2 {
+				@media(max-width: 500px) {
+					font-size: 1rem;
+				}
+				font-size: 1.5rem;
+				.flexcenter;
+				padding: 10px;
+				.borderb;
+			}
+		}
+	}
+
+	.container-content {
+		.contain;
+		height: 70vh;
+		flex-direction: column;
+		align-items: center;
+		.work-skills {
+			@media(max-width: 500px) {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			display: flex;
+			.work {
+				@media(max-width: 500px) {
+					margin-right: 0px;
+				}
+				margin-right: 200px;
+			}
+		}
+		h2 {
+			font-size: 2rem;
+			margin-left: 60px;
+			margin-top: 50px;
+		}
+		table {
+			border: 1px solid black;
+			margin-top: 20px;
+			th {
+				border: 1px solid black;
+				padding: 5px;
+				td {
+					border: 1px solid black;
+				}
+			}
+		}
+
+		.contact {
+			margin-top: 20px;
+			.bordert;
+			width: 80%;
+			h2 {
+				margin-top: 10px;
+			}
+			form {
+				margin: 10px 30px;
+			}
+		}
+	}
+
+	footer {
+		.bordert;
+		.contain;
+		height: 10vh;
+		a {
+			margin: 20px;
+			text-decoration: none;
+			
+		}
+	}
+}
